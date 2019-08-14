@@ -8,6 +8,9 @@ table {
   margin: 0;
   padding: 0;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
@@ -77,18 +80,23 @@ section {
   flex-flow: row wrap;
   justify-content: space-between;
 }
-section .listen-up,
+section .listen-up {
+  width: 48%;
+  margin-top: 30px;
+}
 section .stuff {
   width: 48%;
   margin-top: 30px;
 }
 section .stuff .stuffitems {
   border: 1px solid grey;
+  border-radius: 10px;
 }
 section .stuff p {
   padding: 10px;
+}
+section .stuff .bb {
   border-bottom: 1px solid grey;
-  border-radius: 2px;
 }
 footer p {
   display: flex;
