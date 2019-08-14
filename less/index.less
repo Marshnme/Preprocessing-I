@@ -9,7 +9,7 @@ table {
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
-	border:1px solid black;
+	// border:1px solid black;
 }
 html{
 // font-size: 62.5%;	
@@ -20,10 +20,22 @@ html, body {
 	width:100%;
 	line-height: 1.5;
 }
-//VAR
 
+
+//general styles
+.container{
+	margin:0 auto;
+	width:90%;
+}
+h1{
+	font-family:@font-stack;
+}
+
+//VAR
+	
 	@darkbackground:darkgrey;
-	// @font-stack: //findfonts
+	@font-stack: 'Lexend Exa', sans-serif;
+
 
 //MIXINS
 .flexend(){
@@ -41,7 +53,7 @@ html, body {
 		
 		nav{
 			text-decoration: none;
-			
+			margin:20px 0;
 			a{
 				text-decoration: none;
 				color:black;
@@ -51,16 +63,51 @@ html, body {
 
 
 //main
-
+	main{
+		.flexstart();
+		flex-direction: column;
+		background:lightgrey;
+			.img-container{
+				width:100%;
+				height:100%;
+				margin-top:50px;
+				img{
+					width:20%;
+					height:10%;
+					margin-left: @margin-to-left;
+				}//closes img
+			}//closes img container
+			.name, .teamup{
+				margin-left: @margin-to-left;
+			}
+	}//closes main
 
 
 //sections
-
+	section{
+		display:flex;
+		flex-flow: row wrap;
+		margin-left:;
+	
+		.listen-up{
+			width:50%;
+		}//closes listen-up
+		.stuff{
+			width:50%;
+		}
+	
+	}//closes section
 
 
 
 
 
 //footer
-
+	footer{
+		p{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}//closes footer
 
