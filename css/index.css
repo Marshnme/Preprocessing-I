@@ -1,1 +1,28 @@
-/* Compile your LESS file! */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav {
+  text-decoration: none;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+}
