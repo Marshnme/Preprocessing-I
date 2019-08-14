@@ -20,6 +20,7 @@ body {
 }
 h1 {
   font-family: 'Lexend Exa', sans-serif;
+  margin-top: 0;
 }
 header {
   display: flex;
@@ -32,15 +33,16 @@ header nav {
 header nav a {
   text-decoration: none;
   color: black;
+  margin-left: 15px;
 }
 main {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
   background: lightgrey;
 }
 main .img-container {
-  width: 100%;
+  width: 95%;
   height: 100%;
   margin-top: 50px;
 }
@@ -50,17 +52,43 @@ main .img-container img {
 }
 main .name,
 main .teamup {
-  margin-left: 30px;
+  width: 95%;
+}
+main .teamup {
+  margin-bottom: 60px;
+  border-top: 1px solid black;
+}
+main .teamup .button {
+  margin-top: 1%;
+}
+main .teamup p {
+  padding-top: 20px;
+}
+main .teamup a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 0.5%;
 }
 section {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
-section .listen-up {
-  width: 50%;
-}
+section .listen-up,
 section .stuff {
-  width: 50%;
+  width: 48%;
+  margin-top: 30px;
+}
+section .stuff .stuffitems {
+  border: 1px solid grey;
+}
+section .stuff p {
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  border-radius: 2px;
 }
 footer p {
   display: flex;
