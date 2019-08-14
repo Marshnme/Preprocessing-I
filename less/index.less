@@ -12,12 +12,12 @@ table {
 	// border:1px solid black;
 }
 html{
-font-size: 62.5%;	
+// font-size: 62.5%;	
 }
 
 html, body {
-	height: 100%;
-	width:100%;
+	// height: 100%;
+	width: 100%;
 	line-height: 1.5;
 }
 
@@ -109,7 +109,7 @@ h1{
 
 
 //sections
-	section{
+	.middle-content{
 		display:flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
@@ -135,8 +135,30 @@ h1{
 				border-bottom:1px solid grey;
 			}
 		}//closes stuff
-	}//closes section
 
+	}//closes middle content
+
+	.endcontent{
+		table{
+			
+			width:100%;
+			.bgcolor{
+				background:lightgrey;
+			}
+			tr{
+				
+				border-top:1px solid grey;
+				
+				th{
+					text-align: left;
+					padding:1%;
+				}
+				td{
+					padding:1%;
+				}
+			}//closes tr
+		}//closes table
+	}//closes endcontent
 
 
 

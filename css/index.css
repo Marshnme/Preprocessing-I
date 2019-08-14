@@ -8,12 +8,8 @@ table {
   margin: 0;
   padding: 0;
 }
-html {
-  font-size: 62.5%;
-}
 html,
 body {
-  height: 100%;
   width: 100%;
   line-height: 1.5;
 }
@@ -75,28 +71,44 @@ main .teamup a {
   border-radius: 5px;
   padding: 0.5%;
 }
-section {
+.middle-content {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-section .listen-up {
+.middle-content .listen-up {
   width: 48%;
   margin-top: 30px;
 }
-section .stuff {
+.middle-content .stuff {
   width: 48%;
   margin-top: 30px;
 }
-section .stuff .stuffitems {
+.middle-content .stuff .stuffitems {
   border: 1px solid grey;
   border-radius: 10px;
 }
-section .stuff p {
+.middle-content .stuff p {
   padding: 10px;
 }
-section .stuff .bb {
+.middle-content .stuff .bb {
   border-bottom: 1px solid grey;
+}
+.endcontent table {
+  width: 100%;
+}
+.endcontent table .bgcolor {
+  background: lightgrey;
+}
+.endcontent table tr {
+  border-top: 1px solid grey;
+}
+.endcontent table tr th {
+  text-align: left;
+  padding: 1%;
+}
+.endcontent table tr td {
+  padding: 1%;
 }
 footer p {
   display: flex;
